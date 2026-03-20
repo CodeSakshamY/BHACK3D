@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>BHACK 3D Viewer</title>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<div id="L">
+  <div class="lt">BHACK</div>
+  <div class="ls">Loading 3D Assets</div>
+  <div class="ltr"><div class="ltf" id="lf"></div></div>
+  <div class="ltp" id="lp">Initialising…</div>
+</div>
+
+<canvas id="cv"></canvas>
+
+<header>
+  <div class="logo">BH<em>A</em>CK</div>
+</header>
+
+<div id="mt">
+  <button class="mb on" id="bsc" onclick="setMode('scroll')">Scroll Anim</button>
+  <button class="mb"    id="bor" onclick="setMode('orbit')">Free Orbit</button>
+</div>
+
+<div id="hud">
+  <div class="sl"></div>
+  <div class="xh"></div>
+  <div class="co tl"><b id="an">–</b>All Clips Simultaneous</div>
+  <div class="co tr"><b id="pp">0%</b>Progress</div>
+  <div class="co bl">BHACKfinal.GLB<br>Three.js r134</div>
+  <div class="co br"><span id="ct">0.00s</span><br>Anim Time</div>
+</div>
+
+<div id="pw"><div id="pb"></div></div>
+
+<div id="sh"><span>Scroll to animate</span><div class="bar"></div></div>
+<div id="oh">
+  <span>Left drag — Rotate</span>
+  <span>Scroll — Zoom</span>
+  <span>Right drag — Pan</span>
+</div>
+
+<script type="module" src="main.js"></script>
+</body>
+</html>
